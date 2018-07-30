@@ -8,6 +8,7 @@ import java.awt.Color;
 import com.jogamp.opengl.GL3;
 
 import unsw.graphics.Application2D;
+import unsw.graphics.CoordFrame2D;
 import unsw.graphics.geometry.Point2D;
 
 /**
@@ -33,7 +34,7 @@ public class HelloDot extends Application2D {
     public void display(GL3 gl) {
         super.display(gl);
         Point2D point = new Point2D(0f, 0f);
-        point.draw(gl);
+        point.draw(gl, CoordFrame2D.identity());
     }
 
 }
